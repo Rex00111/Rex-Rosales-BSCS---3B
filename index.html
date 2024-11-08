@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MR. DIY - Your Ultimate DIY Store</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="images/rex_logo.png" type="image/x-icon" />
+    <style></style>
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header class="bg-dark text-white">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="images/rex_logo.png"
+              alt="MR. DIY Logo"
+              height="50"
+              style="border-radius: 50%"
+            />
+            MR. DIY
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://unitedcompany01.github.io/landing-site/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://unitedcompany01.github.io/landing-site/profiles/rex.html"
+                  >Previous Page</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Welcome to MR. DIY</h1>
+        <p>Your one-stop shop for all DIY projects!</p>
+        <a
+          id="start-shopping"
+          href="#shop"
+          class="btn btn-light btn-lg open-modal"
+          >Start Shopping</a
+        >
+      </div>
+    </section>
+
+    <!-- Product Grid Section -->
+    <section id="shop" class="container py-5">
+      <h2 class="text-center mb-4">Featured Products</h2>
+      <div class="product-grid">
+        <div class="card">
+          <img
+            src="images/DIY Tool Set.webp"
+            class="card-img-top"
+            alt="Product 1"
+          />
+          <div class="card-body">
+            <h5 class="card-title">DIY Tool Set</h5>
+            <p class="card-text">
+              Essential tools for every project. Perfect for beginners.
+            </p>
+            <a href="#" class="btn btn-primary open-modal">Shop Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="images/Paint Supplies Kit.webp"
+            class="card-img-top"
+            alt="Product 2"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Paint Supplies Kit</h5>
+            <p class="card-text">
+              All the supplies you'll need for your painting projects!
+            </p>
+            <a href="#" class="btn btn-primary open-modal">Shop Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="images/Woodworking Tools.avif"
+            class="card-img-top"
+            alt="Product 3"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Woodworking Tools</h5>
+            <p class="card-text">
+              Perfect tools for your woodworking projects. Durable and reliable.
+            </p>
+            <a href="#" class="btn btn-primary open-modal">Shop Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="images/Gardening Kit.avif"
+            class="card-img-top"
+            alt="Product 4"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Gardening Kit</h5>
+            <p class="card-text">Everything you need for gardening at home.</p>
+            <a href="#" class="btn btn-primary open-modal">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light py-5">
+      <div class="container text-center">
+        <h2>Our Services</h2>
+        <p class="lead">
+          We offer more than just products! Explore our services.
+        </p>
+        <div class="row">
+          <div class="col-md-4">
+            <h4><i class="fas fa-cogs"></i> Custom DIY Kits</h4>
+            <p>
+              We create tailored DIY kits for your specific projects, from home
+              improvement to crafts.
+            </p>
+            <a href="#" class="btn btn-primary open-modal">Learn More</a>
+          </div>
+          <div class="col-md-4">
+            <h4><i class="fas fa-hammer"></i> Repair Services</h4>
+            <p>Bring in your tools for professional repair and maintenance.</p>
+            <a href="#" class="btn btn-primary open-modal">Learn More</a>
+          </div>
+          <div class="col-md-4">
+            <h4><i class="fas fa-video"></i> Tutorials & Guides</h4>
+            <p>Learn new skills with our step-by-step tutorials and guides.</p>
+            <a href="#" class="btn btn-primary open-modal">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="container py-5">
+      <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="faq-item">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                What is MR. DIY?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                MR. DIY is your go-to online store for everything DIY, including
+                tools, materials, kits, and tutorials.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Do you offer delivery?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Yes, we offer fast delivery on all products to ensure you can
+                get started on your project right away.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-dark text-white py-5">
+      <div class="container text-center">
+        <h2>Contact Us</h2>
+        <p>Got a question? We'd love to hear from you.</p>
+        <a href="#" class="btn btn-light open-modal">Email Us</a>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container text-center">
+        <p>&copy; 2024 MR. DIY | All Rights Reserved</p>
+        <form>
+          <input
+            type="email"
+            class="form-control mb-2"
+            placeholder="Subscribe to our newsletter"
+          />
+          <button type="submit" class="btn btn-primary open-modal">
+            Subscribe
+          </button>
+        </form>
+        <div>
+          <a href="#" class="text-white ms-2">Facebook</a> |
+          <a href="#" class="text-white ms-2">Instagram</a> |
+          <a href="#" class="text-white ms-2">Twitter</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="actionModal"
+      tabindex="-1"
+      aria-labelledby="actionModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="actionModalLabel">
+              Thank You for Your Action!
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            This website is made for educational purposes only.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script>
+      const buttons = document.querySelectorAll(".open-modal");
+      buttons.forEach((button) => {
+        button.addEventListener("click", function (e) {
+          e.preventDefault();
+          const modal = new bootstrap.Modal(
+            document.getElementById("actionModal")
+          );
+          modal.show();
+        });
+      });
+    </script>
+  </body>
+</html>
