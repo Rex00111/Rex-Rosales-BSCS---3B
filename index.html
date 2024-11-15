@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="shortcut icon" href="images/rex_logo.png" type="image/x-icon" />
-    <style></style>
+    <style>
+      .video-embed-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+      }
+    </style>
   </head>
-
   <body>
     <!-- Header Section -->
     <header class="bg-dark text-white">
@@ -58,17 +63,62 @@
       </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+    <!-- New Section 1: Title and Poster -->
+    <section id="poster" class="container py-5 text-center">
+      <h2>Your Ultimate DIY Destination</h2>
+      <img
+        src="images/poster.jpg"
+        alt="Website Poster"
+        class="img-fluid rounded"
+        style="max-width: 100%; height: auto"
+      />
+    </section>
+
+    <!-- New Section 2: Mission & Vision -->
+    <section id="mission-vision" class="bg-light py-5">
+      <div class="container text-center">
+        <h2>Our Mission & Vision</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Mission</h3>
+            <p>
+              Our mission is to empower individuals to bring their creative
+              ideas to life with quality tools and resources. We aim to be the
+              go-to platform for all your DIY needs.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h3>Vision</h3>
+            <p>
+              Our vision is to inspire a global DIY culture, where everyone has
+              the ability to create, build, and repair with confidence. We aim
+              to be the leading provider of DIY tools, materials, and tutorials.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promotional Video Section -->
+    <section class="promotional-video text-center py-5">
       <div class="container">
-        <h1>Welcome to MR. DIY</h1>
-        <p>Your one-stop shop for all DIY projects!</p>
-        <a
-          id="start-shopping"
-          href="#shop"
-          class="btn btn-light btn-lg open-modal"
-          >Start Shopping</a
-        >
+        <h2 class="mb-4">Watch Our Promotional Video</h2>
+        <p class="lead">
+          Get a glimpse of our community's efforts and opportunities through our
+          promotional video!
+        </p>
+        <div class="video-embed-container">
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/YqnYo_rrzZc?si=CURVYLKVvZkEHjJL"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </section>
 
@@ -133,7 +183,6 @@
       </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services" class="bg-light py-5">
       <div class="container text-center">
         <h2>Our Services</h2>
@@ -143,10 +192,7 @@
         <div class="row">
           <div class="col-md-4">
             <h4><i class="fas fa-cogs"></i> Custom DIY Kits</h4>
-            <p>
-              We create tailored DIY kits for your specific projects, from home
-              improvement to crafts.
-            </p>
+            <p>We create tailored DIY kits for your specific projects.</p>
             <a href="#" class="btn btn-primary open-modal">Learn More</a>
           </div>
           <div class="col-md-4">
@@ -166,64 +212,10 @@
     <section id="faq" class="container py-5">
       <h2 class="text-center mb-4">Frequently Asked Questions</h2>
       <div class="accordion" id="faqAccordion">
-        <div class="faq-item">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                What is MR. DIY?
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
-              data-bs-parent="#faqAccordion"
-            >
-              <div class="accordion-body">
-                MR. DIY is your go-to online store for everything DIY, including
-                tools, materials, kits, and tutorials.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                Do you offer delivery?
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#faqAccordion"
-            >
-              <div class="accordion-body">
-                Yes, we offer fast delivery on all products to ensure you can
-                get started on your project right away.
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- FAQ items (existing content) -->
       </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="bg-dark text-white py-5">
       <div class="container text-center">
         <h2>Contact Us</h2>
@@ -232,7 +224,6 @@
       </div>
     </section>
 
-    <!-- Footer Section -->
     <footer>
       <div class="container text-center">
         <p>&copy; 2024 MR. DIY | All Rights Reserved</p>
@@ -253,43 +244,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="actionModal"
-      tabindex="-1"
-      aria-labelledby="actionModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="actionModalLabel">
-              Thank You for Your Action!
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            This website is made for educational purposes only.
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
